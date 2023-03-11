@@ -161,6 +161,8 @@ ul {
 	display: block;
 	position: relative;
 	transition-property: color;
+	transition-duration: var(--transition-dur-and-func);
+	transition-timing-function: var(--timing-function);
 }
 
 .header_link::after {
@@ -455,6 +457,8 @@ ul {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-property: background-color;
+	transition-property: box-shadow;
+	transition-property: border-radius;
 }
 
 .team_list {
@@ -528,6 +532,7 @@ ul {
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: border-radius;
 }
 
 .clients_link:hover,
@@ -693,7 +698,7 @@ ul {
 	border: 1px solid #E7E9FC;
 	border-radius: 4px;
 	background-color: var(--cloud);
-	transition-property:: var(--transition-dur-and-func), cubic-bezier(0.4, 0, 0.2, 1), background: var(--grey-syniy), color: var(--main-light-color), border-color: transparent, box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+	transition: var(--transition-dur-and-func) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main_buttons_btn:hover,
@@ -712,7 +717,7 @@ ul {
 	padding: 0;
 }
 
-.section_row_item {
+.row_item {
 	/*  Set the width of the elements  */
 	flex-basis: calc((100% - 48px) / 3);
 	transition-duration: 250ms;
@@ -863,7 +868,7 @@ footer {
 .modal_close_btn:hover,
 .modal_close_btn:focus {
 	border-color: var(--grey);
-	background-color: #FCFCFC;
+	background-color: #404BBF;
 }
 
 .modal_close_btn_icon {
